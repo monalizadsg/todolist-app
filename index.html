@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo App</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Todo List</h1>
+      </header>
+      <div class="tab">
+        <button class="tablinks" value="all" id="allTab">All</button>
+        <button class="tablinks" value="uncompleted" id="activeTab">
+          Active
+        </button>
+        <button class="tablinks" value="complete" id="completedTab">
+          Completed
+        </button>
+      </div>
+      <form>
+        <input
+          type="text"
+          class="item-input"
+          name="item"
+          id="item"
+          placeholder="add a task"
+        />
+        <button id="add-button" type="submit">
+          <i class="fa fa-plus-circle" aria-hidden="true"></i>
+        </button>
+      </form>
+      <div class="todo-container">
+        <ul class="todo-list"></ul>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
